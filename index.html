@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link href="style.css" type="text/css"    rel="stylesheet" />
+</head> 
+<!-- <script src="index.js"></script> -->
+
+<body>
+    <div class="simple-calc">
+       <table>
+           <tr>
+              <td class="heading">
+                   Simple Calculator
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="input" placeholder="0" size="13s" maxlength="9"/>
+                </td>
+            </tr>
+            <tr>
+            <td  class="buttons">
+                <input class="btns" type="button"  value="C" onclick="clearScreen()" style="color: red;"/>
+                <input class="del-btn" type="button"  value="Del" onclick="deleteBtn()" onMouseover="this.style.color='red'"
+                 onMouseout="this.style.color='black';"/>
+                <input class="btns" type="button"  value="( )"  onclick="brackets()" onMouseover="this.style.color='red'" 
+                onMouseout="this.style.color='black'";/>
+                <input class="btns" type="button"  value="/"   onclick="numbers('/')" onMouseover="this.style.color='red'"  
+                onMouseout="this.style.color='black'"/>
+                <br />
+                <input class="input-btns" type="button" value="1"  onclick="number(1)"/>
+                <input class="input-btns" type="button" value="2"  onclick="number(2)" />
+                <input class="input-btns" type="button" value="3"  onclick="number(3)"/>
+                <input class="btns" type="button" value="+"  onclick="numbers('+')" onMouseover="this.style.color='red'"
+                 onMouseout="this.style.color='black'"/>
+                <br />
+                <input class="input-btns" type="button" value="4"  onclick="number(4)" />
+                <input class="input-btns" type="button" value="5" onclick="number(5)" />
+                <input class="input-btns" type="button" value="6" onclick="number(6)" />
+                <input class="btns" type="button" value="-" onclick="numbers('-')" onMouseover="this.style.color='red'"
+                 onMouseout="this.style.color='black'"/>
+                <br />
+                <input class="input-btns" type="button" value="7"  onclick="number(7)" />
+                <input class="input-btns" type="button" value="8"  onclick="number(8)" />
+                <input class="input-btns" type="button" value="9"  onclick="number(9)" />
+                <input class="btns" type="button" value="X"   onclick="numbers('*')" onMouseover="this.style.color='red'" 
+                onMouseout="this.style.color='black'"/>
+                <br />
+                <input class="input-btns" type="button" value="0"  onclick="number(0)" />
+                <input class="input-btns" type="button" value="."  onclick="decimal('.')"/>
+                <input class="input-btn" type="button" value="="  onclick="result()" onMouseover="this.style.color='red'"
+                onMouseout="this.style.color='black';"/>
+            </td>
+        </tr>
+</table>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
